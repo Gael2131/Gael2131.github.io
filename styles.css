@@ -1,0 +1,295 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #1e1e2f;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Cabecera */
+header {
+    background-color: #12121c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    border-bottom: 3px solid #9146ff;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.logo h1 {
+    font-size: 24px;
+    color: #ffffff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #9146ff;
+}
+
+/* Secciones */
+main {
+    padding: 40px 20px;
+}
+
+section {
+    margin-bottom: 60px;
+}
+
+h2 {
+    font-size: 30px;
+    color: #ffd369;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #f1f1f1;
+}
+
+/* Recuadros con bordes */
+.bordered {
+    background-color: #2a2a40;
+    padding: 20px;
+    border: 2px solid #9146ff;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Tabla del equipo */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #1c1c2b;
+    color: #ffffff;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #9146ff;
+    text-align: left;
+}
+
+/* Lista de valores */
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    padding: 6px 0;
+    font-size: 16px;
+}
+
+/* Servicios - galería */
+.galeria {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.proyecto {
+    text-align: center;
+    background-color: #2d2d44;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.proyecto img {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.proyecto p {
+    color: #ffd369;
+    font-weight: bold;
+}
+
+.proyecto:hover {
+    transform: scale(1.05);
+}
+
+/* Testimonios */
+blockquote {
+    background: #33334d;
+    padding: 20px;
+    border-left: 5px solid #ffd369;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+blockquote footer {
+    margin-top: 10px;
+    font-style: italic;
+    color: #bbbbbb;
+}
+
+/* Formulario de contacto */
+form {
+    background-color: #2a2a40;
+    padding: 30px;
+    border-radius: 8px;
+    border: 2px solid #9146ff;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #f1f1f1;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1c1c2b;
+    color: #ffffff;
+}
+
+form input[type="submit"] {
+    background-color: #9146ff;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #6d2edc;
+}
+
+/* Footer */
+footer {
+    background-color: #12121c;
+    text-align: center;
+    padding: 20px;
+    color: #aaaaaa;
+    font-size: 14px;
+    border-top: 3px solid #9146ff;
+}
+/* ====== Tarjeta del Fundador dentro de “¿Quiénes Somos?” ====== */
+
+.section-acerca .tarjetas-container {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.section-acerca .tarjetas-container .card {
+  position: relative;
+  width: 250px;
+  height: 350px;
+  border-radius: 10px;
+  box-shadow: 2px 3px 5px rgba(73, 69, 52, 0.4);
+  background: #fff;
+  overflow: hidden;
+}
+
+.section-acerca .tarjetas-container .card .content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+.section-acerca .tarjetas-container .card .content span {
+  position: absolute;
+  width: 350px;
+  height: 200px;
+  background: linear-gradient(to right, #5e2066, #b332c7);
+  transform: rotate(-35deg);
+  top: -50px;
+  left: -100px;
+  z-index: -1;    /* <- pasa el degradado por detrás */
+}
+}
+
+.section-acerca .tarjetas-container .card .content .img {
+  margin-bottom: 20px;
+}
+
+.section-acerca .tarjetas-container .card .content .img img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(0,0,0,0.8);
+}
+
+.section-acerca .tarjetas-container .card .content h4 {
+  font-size: 18px;
+  margin: 0.5rem 0 0.2rem;
+}
+
+.section-acerca .tarjetas-container .card .content h6 {
+  font-size: 14px;
+  color: #5e2066;
+  margin-bottom: 1rem;
+}
+
+.section-acerca .tarjetas-container .card .content p {
+  font-size: 13px;
+  color: #333;
+}
+
+.section-acerca .tarjetas-container .card .links {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: rgba(255,255,255,0.6);
+  padding: 10px;
+  border-radius: 0 8px 8px 0;
+  transition: right 0.5s;
+}
+
+.section-acerca .tarjetas-container .card:hover .links {
+  right: -60px;
+}
+
+.section-acerca .tarjetas-container .card .links a {
+  color: #646069;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.section-acerca .tarjetas-container .card .links a:hover {
+  color: #5e2066;
+}
+
